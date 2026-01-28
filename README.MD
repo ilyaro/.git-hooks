@@ -4,9 +4,12 @@ Scans commits for secrets using TruffleHog.
 
 ## Setup
 
-```bash
+Install TruffleHog:
+
+ ```bash
 # Install TruffleHog
-brew install trufflehog
+ brew install trufflehog
+```
 
 # Create hooks directory
 mkdir -p ~/.git-hooks
@@ -22,7 +25,6 @@ chmod +x ~/.git-hooks/pre-commit
 
 # set pre-commit to run on commit in all repos
 git config --global core.hooksPath ~/.git-hooks
-```
 
 ## Usage
 
