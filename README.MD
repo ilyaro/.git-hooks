@@ -12,10 +12,10 @@ Install TruffleHog:
 ```
 
 # Run the deployment script:
-#
-# ```bash
-# ./deploy.sh
- ```
+
+```bash
+ ./deploy.sh
+```
 
 ## Usage
 
