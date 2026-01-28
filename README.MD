@@ -11,20 +11,11 @@ Install TruffleHog:
  brew install trufflehog
 ```
 
-# Create hooks directory
-mkdir -p ~/.git-hooks
-
-# Create pre-commit hook
-cat > ~/.git-hooks/pre-commit << 'EOF'
-#!/bin/bash
-trufflehog filesystem --no-update . --fail
-EOF
-
-# Make it executable
-chmod +x ~/.git-hooks/pre-commit
-
-# set pre-commit to run on commit in all repos
-git config --global core.hooksPath ~/.git-hooks
+# Run the deployment script:
+#
+# ```bash
+# ./deploy.sh
+ ```
 
 ## Usage
 
