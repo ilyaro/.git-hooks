@@ -1,2 +1,2 @@
 #!/bin/bash
-trufflehog filesystem --no-update . --fail
+trufflehog filesystem --no-update --only-verified . --fail
