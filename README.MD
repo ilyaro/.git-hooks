@@ -14,7 +14,7 @@ Install TruffleHog:
 # Run the deployment script:
 
 ```bash
- ./deploy.sh
+ ./deploy-script.sh
 ```
 
 ## Usage
