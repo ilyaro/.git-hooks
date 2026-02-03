@@ -25,10 +25,10 @@ fi
 
 # Configure git to use the global hooks directory
 if [ "$(git config --global core.hooksPath)" = "$HOOKS_DIR" ]; then
-    echo "Already installed with same config. Skipping."
+    echo "Already set: git config --global core.hooksPath \"$HOOKS_DIR\". Skipping."
 else 
     git config --global core.hooksPath "$HOOKS_DIR"
-    echo "git config --global core.hooksPath \"$HOOKS_DIR\""
+    echo "Setting: git config --global core.hooksPath \"$HOOKS_DIR\""
     installing=1
 fi
 
