@@ -19,6 +19,7 @@ fi
 if ! diff -q "$SCRIPT_DIR/pre-commit" "$HOOKS_DIR/pre-commit" >/dev/null 2>&1; then
     cp "$SCRIPT_DIR/pre-commit" "$HOOKS_DIR/pre-commit"
     chmod +x "$HOOKS_DIR/pre-commit"
+    echo "Copied $SCRIPT_DIR/pre-commit to $HOOKS_DIR/pre-commit and made it executable"
     installing=1
 fi
 
