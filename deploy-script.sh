@@ -28,6 +28,7 @@ if [ "$(git config --global core.hooksPath)" = "$HOOKS_DIR" ]; then
     echo "Already installed with same config. Skipping."
 else 
     git config --global core.hooksPath "$HOOKS_DIR"
+    echo "git config --global core.hooksPath \"$HOOKS_DIR\""
     installing=1
 fi
 
