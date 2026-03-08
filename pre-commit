@@ -1,3 +1,4 @@
 #!/bin/bash
 ## Get staged files list exceprt for deleted filed, and run trafflehod to scan secrets
+export PATH="/opt/homebrew/bin:$PATH"
 git diff --cached | trufflehog stdin --no-update --fail
